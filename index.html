@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+      <button onclick="openNav()">Open</button>
+    </header>
+    <nav id="rightNav">
+      <div class="heading">
+        <h2>Apps Menu</h2>
+        <button onclick="closeNav()">Close</button>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Team</li>
+        <li>Setting</li>
+      </ul>
+    </nav>
+    <div>
+      <h1>Welcome to Javascript</h1>
+      <h1 id="name">My name</h1>
+      <div id="parentContainer"></div>
+      <button onclick="changeBlue()">Change to Blue</button>
+      <button onclick="changeRed()">Change to Red</button>
+      <button onclick="openModal('info')">Info</button>
+      <button onclick="openModal('warning')">Warning</button>
+      <button onclick="openModal('danger')">Danger</button>
+    </div>
+    <div id="errorModal">
+      <div>
+        <h2 id="errorAlert">Error Alert</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+          praesentium possimus vitae eaque fuga consequatur animi perferendis
+          maxime nobis recusandae sed nihil vero repudiandae, laborum corrupti,
+          velit hic illum molestiae.
+        </p>
+        <button onclick="closeModal()">Ok</button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
