@@ -53,15 +53,15 @@ function nextVideo() {
 
   if (indexVideo == listVideo.length - 1) {
     alert("Last Video");
+  } else {
+    console.log(indexVideo);
+    nextPlaylist = listVideo[indexVideo + 1];
+
+    console.log(nextPlaylist);
+
+    videoName.src = `http://127.0.0.1:5500/assests2/${nextPlaylist}`;
+    videoPlayer.setAttribute("src", `./assests2/${nextPlaylist}`);
   }
-
-  console.log(indexVideo);
-  nextPlaylist = listVideo[indexVideo + 1];
-
-  console.log(nextPlaylist);
-
-  videoName.src = `http://127.0.0.1:5500/assests2/${nextPlaylist}`;
-  videoPlayer.setAttribute("src", `./assests2/${nextPlaylist}`);
 }
 
 function previousVideo() {
@@ -75,13 +75,13 @@ function previousVideo() {
 
   if (indexVideo == 0) {
     alert("Last Video");
+  } else {
+    console.log(indexVideo);
+    nextPlaylist = listVideo[indexVideo - 1];
+
+    console.log(nextPlaylist);
+
+    videoName.src = `http://127.0.0.1:5500/assests2/${nextPlaylist}`;
+    videoPlayer.setAttribute("src", `./assests2/${nextPlaylist}`);
   }
-
-  console.log(indexVideo);
-  nextPlaylist = listVideo[indexVideo - 1];
-
-  console.log(nextPlaylist);
-
-  videoName.src = `http://127.0.0.1:5500/assests2/${nextPlaylist}`;
-  videoPlayer.setAttribute("src", `./assests2/${nextPlaylist}`);
 }
