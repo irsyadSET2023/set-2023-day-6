@@ -89,6 +89,7 @@ function gotoVideo(video) {
   videoName.src = `http://127.0.0.1:5500/assests2/${video}.mp4`;
   videoPlayer.setAttribute("src", `./assests2/${video}.mp4`);
   videoTitle.innerHTML = video;
+  playBtn.className = "fa fa-play";
 }
 
 let slideIndex = 1;
